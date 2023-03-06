@@ -1,0 +1,13 @@
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    
+}
+
+.about-text{
+    background-color: pink;
+    color: black;
+    padding: 2rem 2rem;
+}
+
