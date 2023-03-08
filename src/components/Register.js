@@ -54,7 +54,7 @@ const Register = () => {
     
   return (
     <div className='register-container'>
-    <main>
+    <div className="register-main">
         <div className='image-holder'>
             <img src="https://images.unsplash.com/photo-1573167627769-e201a7ddf409?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="advert"/>
         </div>
@@ -77,7 +77,7 @@ const Register = () => {
            <Link to="/" className='home-btn2'><button>HOME</button></Link>
            </div>
            
-    </main>
+    </div>
     </div>
   )
 }

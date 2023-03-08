@@ -4,14 +4,18 @@
     grid-template-rows: auto;
     height: 100%;
     width: 100%;
+    background-color: blue;
+    overflow: hidden;
 }
 
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 35rem 35rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-auto-flow: row;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .home-content{
@@ -23,6 +27,7 @@ main{
 .home-content h2{
     position: relative;
     top: 20%;
+    padding: 0 4rem;
     text-align: center;
 }
 

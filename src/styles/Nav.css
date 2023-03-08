@@ -1,9 +1,10 @@
 nav{
     display: flex;
-    margin-left: 0;
     flex-basis: 100%;
     justify-content: end;
     gap: 2rem;
-    padding-right: 1rem;
     background-color: palevioletred;
+    height: 100%;
+    padding-top: 5px;
+    padding-right: 30px;
 }

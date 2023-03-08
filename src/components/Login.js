@@ -9,7 +9,7 @@ const Login = () => {
     
     <div className='login-container'>
 
-<main>
+<div className="login-main">
         <div className='image-holder'>
             <img src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="advert"/>
         </div>
@@ -23,7 +23,7 @@ const Login = () => {
            </form>
            <Link to="/" className='home-btn2'><button>HOME</button></Link>
            </div>
-    </main>
+    </div>
     </div>
   )
 }

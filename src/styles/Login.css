@@ -8,6 +8,7 @@
     position: relative;
     top: 20%;
     text-align: center;
+    padding: 0 3rem;
 }
 
 
@@ -17,7 +18,7 @@
     width: 15rem;
     height: 1.5rem;
     top: 30%;
-    left: 40%;
+    left: 30%;
     background-color: red;
     color: white;
 
@@ -29,6 +30,12 @@
     position: relative;
 }
 
+.login-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
 
 
 .form-content-login form{
@@ -36,7 +43,7 @@
     grid-template-columns: 15rem;
     grid-template-rows: 2rem 2rem;
     position: relative;
-    left: 40%;
+    left: 30%;
     top: 30%;  
 }
 
