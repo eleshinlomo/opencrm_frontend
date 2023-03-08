@@ -1,3 +1,3 @@
 This is a CRM project built for start-ups. Users will be able to manage their businesses both on Web and Mobile. Beta version of this application will be released this month which will perform all necessary CRUD functions and interract with necessary APIs ideal for businesses.
 
-Other features to be added include GPT functionalities. This is a React Frontend appilcation and server side is Node js. Goal is to make this this most secured and most useful application  ever made in 2023.
+Other features to be added include GPT functionalities. This is a React Frontend application and server side is Node js. Goal is to make this most secured and most useful application  ever made in 2023.
