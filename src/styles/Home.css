@@ -33,79 +33,14 @@ main{
     top: 30%;
     width: 6rem;
     height: 2rem;
-}
-
-.form-content-register .home-btn2 button{
-    display: block;
-    position: relative;
-    width: 15rem;
-    height: 1.5rem;
-    top: 20%;
-    left: 40%;
-    background-color: rgb(199, 45, 45);
-
-}
-
-.form-content-login h3{
-    position: relative;
-    top: 20%;
-    text-align: center;
-}
-
-
-.form-content-login .home-btn2 button{
-    display: block;
-    position: relative;
-    width: 15rem;
-    height: 1.5rem;
-    top: 30%;
-    left: 40%;
-    background-color: rgb(199, 45, 45);
-
-}
-
-.form-content-login{
-    background-color: pink;
-    display: block;
-    position: relative;
-}
-
-.form-content-register{
-    background-color: pink;
-    display: block;
-    position: relative;
+    color: white;
 }
 
 
 
-.form-content-login form{
-    display: grid;
-    grid-template-columns: 15rem;
-    grid-template-rows: 2rem 2rem;
-    position: relative;
-    left: 40%;
-    top: 30%;  
-}
 
 
-.form-content-register form{
-    display: grid;
-    grid-template-columns: 15rem;
-    grid-template-rows: 2rem 2rem;
-    position: relative;
-    left: 40%;
-    top: 20%;  
-}
 
-.form-content-login form button{
-    width: 15rem;
-    height: 1.5rem;
-}
-
-.form-content-register form button{
-    width: 15rem;
-    height: 1.5rem;
-}
 
 
 

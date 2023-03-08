@@ -1,12 +1,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import '../styles/Home.css'
+import '../styles/Login.css'
 
 const Login = () => {
   return (
 
     
-    <div className='container'>
+    <div className='login-container'>
 
 <main>
         <div className='image-holder'>
@@ -18,7 +19,7 @@ const Login = () => {
         <form>
             <input type="email" placeholder='Email'  />
             <input type="password" placeholder='Password'  />
-            <button className='login-btn'>LOGIN</button>
+            <Link to="/dashboard"><button className='login-btn'>LOGIN</button></Link>
            </form>
            <Link to="/" className='home-btn2'><button>HOME</button></Link>
            </div>

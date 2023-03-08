@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import '../styles/Home.css'
+import '../styles/register.css'
 import { useEffect, useState } from 'react';
 
 const Register = () => {
@@ -9,9 +10,11 @@ const Register = () => {
     const [lastname, setLastname] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    const [message, setMessage] = useState("This is message")
+    const [message, setMessage] = useState("Register here")
 
+    
     const submitHandler =(e)=>{
+        
         e.preventDefault()
         fetch('http://localhost:3500/api/addUser', {
             method: "POST",
@@ -38,9 +41,14 @@ const Register = () => {
                 return result
             }
         })
+
         .catch((err)=>console.log(err))
-        
+    
     }
+
+
+        
+    
 
     
     
@@ -52,7 +60,7 @@ const Register = () => {
         </div>
 
        <div className='form-content-register'>
-        <div className='message'>
+        <div className='register-message'>
         {message}
         </div>
         <form onSubmit={submitHandler}>
