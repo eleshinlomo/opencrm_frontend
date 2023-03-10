@@ -28,10 +28,15 @@ const navigate = useNavigate();
         })
 
         .then((result)=>{
-            if(!result){
-                setError(result.message)
+            if(result.status === 401){
+                setError('User does not exist')
+                navigate('/login')
+            }
+           
+            if(result.status === 200){
+                navigate('/dashboard')
             }else{
-                navigate.push('/dashboard');
+                setError("User does not exist. Please check username and password");
             }
         })
 

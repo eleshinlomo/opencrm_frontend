@@ -33,9 +33,17 @@ const Register = () => {
         })
 
         .then((result)=>{
-            if(!result){
-                setError(result.message)
-            }else{
+            if(result.status === 409){
+                setError("User already exist")
+            }
+            if(result.status === 201){
+                setError("You are now registered")
+            }
+            if(result.status === 500){
+                setError("Server error. User was not created")
+            }
+            else{
+                localStorage.clear()
                 return result
             }
         })

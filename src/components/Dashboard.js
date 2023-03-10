@@ -1,13 +1,15 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import Logout from './Logout'
 
 
 const Dashboard = () => {
   const [user, setUser] = useState([])
+  const [error, setError] = useState(null)
 
    useEffect(()=>{
 
-     fetch('http://localhost:3500/api/dashboard', {
+     fetch('http://localhost:3500/api/user', {
       method: "GET",
       mode: "cors",
       headers: {
@@ -17,17 +19,17 @@ const Dashboard = () => {
      })
 
      .then((result)=>{
-      if(!result){
-        console.log("No result found")
+      if(result.status === 407){
+        setError("You are not authorized to view this page")
       }else{
       return result.json()
       }
      })
 
      .then((res)=>{
-      console.log(res)
-      setUser(res)
-      return res
+      console.log(res.data)
+      setUser(res.data)
+      return res.data
      })
       
     }, [])
@@ -43,13 +45,11 @@ const Dashboard = () => {
        {
         user.map(user =>
         <div>
+        <Logout />
+        {error}
         <h3>Welcome {user.firstname}</h3>
 
-        <h2>All Users</h2>
-        <h4>{user.firstname}</h4>
-        <h4>{user.lastname}</h4>
-        <h4>{user.email}</h4>
-        </div>
+       </div>
         )
        }
        
