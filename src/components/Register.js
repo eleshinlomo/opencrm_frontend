@@ -10,7 +10,8 @@ const Register = () => {
     const [lastname, setLastname] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    const [message, setMessage] = useState("Register here")
+    const [error, setError] = useState(null)
+    
 
     
     const submitHandler =(e)=>{
@@ -33,11 +34,8 @@ const Register = () => {
 
         .then((result)=>{
             if(!result){
-                setMessage("There seem to be an error. Please check your responses.")
+                setError(result.message)
             }else{
-                setMessage(`Hello ${firstname}, you are now registered. 
-                We are happy to see how this CRM turns your business around.`)
-                console.log(result)
                 return result
             }
         })
@@ -47,6 +45,7 @@ const Register = () => {
     }
 
 
+   
         
     
 
@@ -61,7 +60,8 @@ const Register = () => {
 
        <div className='form-content-register'>
         <div className='register-message'>
-        {message}
+        {error}
+    
         </div>
         <form onSubmit={submitHandler}>
             <label for="email">Email</label>
@@ -75,8 +75,7 @@ const Register = () => {
             <button type='submit' className='register-btn'>REGISTER</button>
            </form>
            <Link to="/" className='home-btn2'><button>HOME</button></Link>
-           </div>
-           
+           </div>    
     </div>
     </div>
   )
